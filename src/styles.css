@@ -1,8 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Kavivanar|Mukta+Mahee:400,500,700');
+/*font-family: 'Kavivanar', cursive;
+font-family: 'Mukta Mahee', sans-serif;*/
 *{
 	box-sizing:border-box;
 }
 body{
+	font-family: 'Mukta Mahee', sans-serif;
 	display: block;
 	margin: 0;
 	position: relative;
@@ -16,13 +20,13 @@ header{
 	padding:1em 0;
 }
 header h2{
+	font-family: 'Kavivanar', cursive;
 	margin: 0;
 	padding:0;
 }
 footer{
 	text-align: center;
 }
-
 .center{
 	display:block;
 	margin-left:auto;
@@ -31,9 +35,59 @@ footer{
 	position:relative;
 }
 .content{
-	display:flex;
+	display:block;
 	margin:1em auto;
 	padding:1em;
+}
+.content article h2{
+	color: rgb(133, 75, 92);
+	text-align: center;
+	width:100%;
+	text-shadow: 1px 1px 1px #ccc;
+	border-bottom:1px solid rgb(133, 75, 92);
+}
+.contentHome ul{
+	display:flex;
+	padding:0px;
+}
+.contentHome li{
+	border:1px solid #ccc;
+	border-radius:10px;
+	overflow:hidden;
+	display:flex;
+	margin:1%;
+	width:48%;
+	align-items:center;
+	padding:0;
+}
+.contentHome li .bikeIntro{
+	position:relative;
+	cursor:pointer;
+}
+.contentHome li:hover > .bikeIntro > .mascara{
+	opacity:1;
+	transition:.4s all;
+}
+.contentHome li .bikeIntro .mascara{
+	position:absolute;
+	opacity:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.9);
+	padding:50px;
+	transition:.4s all;
+	top:0;
+	left:0;
+	color:white;
+}
+.contentHome li .bikeIntro .mascara h3{
+	border-bottom:1px solid white;
+}
+.contentHome li .bikeIntro .mascara li{
+	padding:0 1em;
+}
+.contentHome figure img{
+	max-width: 100%;
 }
 .content__main{
 	width:70%;
@@ -41,4 +95,23 @@ footer{
 .content__descriptions{
 	margin-left:1%;
 	width: 29%;
+}
+.introduction{
+	background: url('assets/bgheader.png') center center no-repeat;
+	color:#f2f2f2;
+	font-family: 'Kavivanar', cursive;
+	text-align:center;
+	max-width: 100%;
+	padding:30px 0;
+	font-weight:bold;
+	margin:10px auto;
+	font-size:20px;
+	margin:0px;
+	text-shadow:2px 3px 2px #000;
+}
+.introduction span{
+	color:white;
+	display:block;
+	text-align:right;
+	font-size:16px;
 }

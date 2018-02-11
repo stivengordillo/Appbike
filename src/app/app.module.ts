@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent }  from './components/header.component';
-import { ContentComponent }  from './components/content.component';
+import { ContentHomeComponent }  from './components/contentHome.component';
 import { FooterComponent }  from './components/footer.component';
-import {BikesConsultingService } from './services/bikes-consulting.service';
+import { BikesConsultingService } from './services/bikes-consulting.service';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, FooterComponent , ContentComponent
+    AppComponent, HeaderComponent, FooterComponent , ContentHomeComponent
   ],
   imports: [
     BrowserModule
@@ -18,4 +18,6 @@ import {BikesConsultingService } from './services/bikes-consulting.service';
   providers: [BikesConsultingService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

@@ -6,5 +6,5 @@ import {Component} from '@angular/core';
 })
 
 export  class HeaderComponent{
-	
+  	tittleApp:string = "BikesApp in ng4";
 }
