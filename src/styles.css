@@ -19,6 +19,10 @@ header{
 	color:white;
 	padding:1em 0;
 }
+header a{
+	text-decoration:none;
+	color:white;
+}
 header h2{
 	font-family: 'Kavivanar', cursive;
 	margin: 0;
@@ -45,6 +49,30 @@ footer{
 	width:100%;
 	text-shadow: 1px 1px 1px #ccc;
 	border-bottom:1px solid rgb(133, 75, 92);
+}
+.contentInternal{
+	display:flex;
+	flex-wrap:wrap;
+}
+.contentInternal div{
+	margin: 1%;
+	width: 48%;
+}
+.contentInternal div img{
+	max-width:100%;
+}
+.contentInternal .ci-right{
+	background:#ccc;
+	border-radius:10px;
+	padding: 1em;
+}
+.contentInternal .ci-right h3{
+	margin: 0 1em 0 0;
+	padding:0px;
+	color:rgb(133, 75, 92);
+}
+.contenInternal h2{
+	width: 100%;
 }
 .contentHome ul{
 	display:flex;

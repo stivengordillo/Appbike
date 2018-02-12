@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 
 export class BikesConsultingService {
-  getBikes(){
+  getProveedores(){
     return 'Mensaje desde el servicio';
   }
   constructor() { }
