@@ -1,9 +1,10 @@
 {
     "nameBike" : "Harley-Davidson CVO Limited 2018",
-    "motor"    : "Milwaukee-Eight 117",
-    "ciclos"   : "4 Tiempos",
-    "marchas"  : "6",
+    "engine"    : "Milwaukee-Eight 117",
+    "cicles"   : "4 Tiempos",
+    "speeds"  : "6",
     "transmision" : "manual",
-    "cilindrada" : "1923.0",
-    "valor" : "46.500 Euros"	
+    "cilinder" : "1923.0",
+    "price" : "46.500 Euros",
+    "imgName": "harley-davidson"	
 }

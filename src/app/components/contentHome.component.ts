@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { BikesConsultingService } from '../services/bikes-consulting.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
 	selector: 'bikesAppContent',

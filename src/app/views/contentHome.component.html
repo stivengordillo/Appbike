@@ -1,5 +1,5 @@
 <section class="introduction">
-    <blockquote>
+    <blockquote class="animated fadeIn">
         "{{word}}"
         <span>
             {{wordBy}}
@@ -7,11 +7,13 @@
     </blockquote>
 </section>
 <section class="content center">
-    <article class="contentHome" >
+    <article class="contentHome" onload="getPosts()" >
         <h2>Las más pro para el 2018</h2>
-        <ul>
+        
+      
+        <ul class="animated fadeInLeft">
             <li>
-                <a  routerLink="/bikeinfo">
+                <a routerLink="/bikeinfo">
                     <div class="bikeIntro">
                         <figure>
                             <img src="assets/harley-davidson.jpg" alt="">
@@ -28,7 +30,7 @@
                     </div>
                 </a>
             </li>
-        </ul>
+        </ul> 
     </article>
 </section>
 
