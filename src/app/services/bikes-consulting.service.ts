@@ -4,13 +4,11 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 
 export class BikesConsultingService {
-  readonly jsonRoutes = "../json/config.json";
-  post:any;
+  private bikes = 'json/config.json';
 
-  constructor(private http: HttpClient){}
-  
-  getPosts(){
-    alert('hi')
-    this.post = this.http.get(this.jsonRoutes + '/bikes');
+  constructor(private http: HttpClient) { }
+  getBikes() {
+    return this.http.get("/json/config.json");
   }
+
 }
