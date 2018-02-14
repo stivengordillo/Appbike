@@ -92,11 +92,15 @@ footer{
 	position:relative;
 	cursor:pointer;
 }
-.contentHome li:hover > .bikeIntro > .mascara{
+.contentHome li a{
+	color:rgb(133, 75, 92);
+	text-decoration:none;
+}
+.contentHome li:hover > a > .bikeIntro > .mascara{
 	opacity:1;
 	transition:.4s all;
 }
-.contentHome li .bikeIntro .mascara{
+.contentHome li > a > .bikeIntro .mascara{
 	position:absolute;
 	opacity:0;
 	width:100%;
@@ -107,6 +111,13 @@ footer{
 	top:0;
 	left:0;
 	color:white;
+}
+.contentHome li span{
+	text-align: center;
+	font-size:25px;
+	width:100%;
+	display:block;
+	font-weight:900;
 }
 .contentHome li .bikeIntro .mascara h3{
 	border-bottom:1px solid white;

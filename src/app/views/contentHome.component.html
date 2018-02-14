@@ -7,30 +7,24 @@
     </blockquote>
 </section>
 <section class="content center">
-    <article class="contentHome" onload="getPosts()" >
-        <h2>Las más pro para el 2018</h2>
-        
-      
+    <article class="contentHome"  >
+            
+        <h2>Moto en venta</h2>
         <ul class="animated fadeInLeft">
-            {{dataBikes | json}}
-            <!-- <li>
-                <a routerLink="/bikeinfo">
+            <li *ngFor ="let bike of dataBikes">
+                <a (click)="goToBikeInfo(bike.id)">
                     <div class="bikeIntro">
                         <figure>
-                            <img src="assets/harley-davidson.jpg" alt="">
+                            <img src="assets/{{bike.img}}.jpg" alt="">
                         </figure>
                         <div>
-                            <h2>Harley davidd 3457</h2>
+                            <h2>{{bike.marca}}</h2>
+                            <span>{{bike.precio}}</span>
                         </div>
-                        <div class="mascara">
-                            <h3>Especificaciones:</h3>
-                            <ul>
-                                <li><strong>Motor:</strong> hojfojfjofd</li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </a>
-            </li> -->
+            </li> 
         </ul> 
     </article>
 </section>

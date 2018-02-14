@@ -4,11 +4,15 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 
 export class BikesConsultingService {
-  private bikes = 'json/config.json';
+  private bikes = 'http://localhost:4200/assets/json/config.json';
 
   constructor(private http: HttpClient) { }
   getBikes() {
-    return this.http.get("/json/config.json");
+    return this.http.get(this.bikes);
+  }
+
+  getBikesById(id) {
+    return this.http.get(this.bikes);
   }
 
 }

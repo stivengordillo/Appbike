@@ -1,0 +1,26 @@
+[
+    {
+        "marca": "Harley Davidson" ,
+        "cambios": "6",
+        "estado": "Nueva",
+        "precio": "45.000 USD",
+        "img": "harley-davidson",
+        "id": 1
+    },
+    {
+        "marca": "Auteco 1500" ,
+        "cambios": "6",
+        "estado": "usada",
+        "precio": "5.200 USD",
+        "img": "auteco",
+        "id": 2
+    },
+    {
+        "marca": "Harley Davidson" ,
+        "cambios": "6",
+        "estado": "Nueva",
+        "precio": "45.000 USD",
+        "img": "harley-davidson",
+        "id": 3
+    }
+]

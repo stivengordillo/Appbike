@@ -1,4 +1,4 @@
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ActivatedRoute } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -17,7 +17,7 @@ const appRoutes: Routes = [
     data: { title: 'Cambia el titulo de las pestaña' } 
   },
   {
-    path: 'bikeinfo',
+    path: 'bike/:id',
     component: ContentInternalComponent,
     data: { title: 'Más información sobre'}
   }
