@@ -125,6 +125,9 @@ footer{
 .contentHome li .bikeIntro .mascara li{
 	padding:0 1em;
 }
+.contentHome figure{
+	height:120px;
+}
 .contentHome figure img{
 	max-width: 100%;
 }

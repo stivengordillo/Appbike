@@ -8,12 +8,19 @@
 </section>
 <section class="content center">
     <article class="contentInternal animated fadeInLeft">
-        <h2>Nombre de la moto</h2>
+        <h2>{{bike.marca}} - Modelo : {{bike.modelo}}</h2>
         <div class="ci-left">
-            <img src="assets/harley-davidson.jpg">
+            <img src="assets/{{bike.img}}.jpg">
         </div>
         <div class="ci-right">
-            <h3>Specs:</h3>
+            <h3>Especificaciones:</h3>
+            <ul>
+                <li><strong>Estado:</strong>{{bike.estado}}</li>
+                <li><strong>Cambios:</strong>{{bike.cambios}}</li>
+                <li><strong>Precio:</strong>{{bike.precio}}</li>
+            </ul>
         </div>
+        <p>{{bike.desc}}</p>
+        
     </article>
 </section>
