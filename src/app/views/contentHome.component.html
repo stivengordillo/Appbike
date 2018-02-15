@@ -10,7 +10,7 @@
     <article class="contentHome"  >
         <div class="filtrar animated fadeIn">
             <h4>Filtrar por:</h4>
-            <button>Precio</button>
+            
             <div>
                 <span>Marca:</span>
                 <select name="brands" [(ngModel)]="selectBrand" (ngModelChange)="changeSelectedBrand($event)" >
@@ -20,9 +20,10 @@
             </div>
             <div>
                 <span>Estado:</span>
-                <select>
-                    <option value="nueva">Nueva</option>
-                    <option value="usada">Usada</option>
+                <select name="state" [(ngModel)]="selectState" (ngModelChange)="changeSelectedState($event)">
+                    <option value="todas" >Todas las motos</option>
+                    <option value="Nueva">Nueva</option>
+                    <option value="Usada">Usada</option>
                 </select>
             </div>
         </div>

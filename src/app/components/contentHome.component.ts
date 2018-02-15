@@ -51,8 +51,23 @@ export  class ContentHomeComponent{
 			}
 			
 		} );
-		
-
+	}
+	changeSelectedState(estado){
+		this.bikesConsultingService.getBikes().subscribe(data =>{
+			this.dataBikes = data;
+			let tempArray = [];
+			//debugger
+			if(estado != "todas"){
+				for(let i=0; i<this.dataBikes.length; i++){
+					if(this.dataBikes[i].estado === estado )
+					{
+						tempArray.push(this.dataBikes[i])
+					}
+				}
+				this.dataBikes = tempArray;	
+			}
+			
+		} );
 	}
 
 
