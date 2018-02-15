@@ -1,9 +1,10 @@
 [
     {
         "marca": "Yamaha D500" ,
+        "ref": "Yamaha",
         "cambios": "6",
         "estado": "Nueva",
-        "precio": "45.000 USD",
+        "precio": 45000,
         "img": "yamaha",
         "modelo": "1995",
         "desc": "Con algunos cambios únicamente a nivel de decoración, la Yamaha YZ125 2017 conserva intacta la base del año 2015, cuando introdujo algunos cambios en las suspensiones. Con su ultraligero chasis de aluminio y el rabioso motos dos tiempos 125 cc la Yamaha YZ 125 sigue siendo en 2017 una de las opciones más valoradas de su categoría.",
@@ -11,9 +12,10 @@
     },
     {
         "marca": "KTM 100" ,
+        "ref": "KTM",
         "cambios": "6",
         "estado": "usada",
-        "precio": "5.200 USD",
+        "precio": 5200,
         "modelo": "2001",
         "img": "ktm",
         "desc": "Este modelo está pensado para pilotos de entre 8 y 12 años y que no superen el 1,60 m de altura. Las novedades de este año se centran el las suspensiones. La horquilla invertida delantera WP AER 35, monta un nuevo muelle neumático siendo completamente ajustable. Su peso se ha reducido en 750 gramos respecto al modelo anterior. La suspensión trasera también cuenta con justes en todas sus vías. El motor mantiene el ciclo de 2T con un cambio de 6 velocidades y embrague hidráulico firmado por Formula. El chasis está tratado con un recubrimiento de polímero en color negro, lo que aumenta la resistencia al degaste.",
@@ -21,19 +23,21 @@
     },
     {
         "marca": "Honda CBR" ,
+        "ref": "Honda",
         "cambios": "6",
         "estado": "Nueva",
-        "precio": "45.000 USD",
+        "precio": 25123,
         "modelo": "2003",
         "img": "honda",
         "desc": "El modelo 50 SX es la elección perfecta como motocicleta de acceso al mundo off-road. Ha sido diseñada pensando en los pilotos más jóvenes y construida con componentes de alta calidad. Su motor de 2T ofrece un rendimiento constante y manejable, al igual que el embrague automático, que ofrece una respuesta ideal en todos los regímenes. Los cambios más significativos respecto al modelo del año pasado afectan a la horquilla delantera, que recibe un nuevo conjunto firmado por WP. La amortiguación trasera es ahora multiajustable con el sistema anclado directamente al basculante. Un nuevo escape y nuevos gráficos en su carrocería completan el nuevo modelo.",
         "id": 3
     },
     {
-        "marca": "Yamaha Cross1" ,
+        "marca": "Lester Cross1" ,
+        "ref": "Lester",
         "cambios": "6",
         "estado": "Nueva",
-        "precio": "45.000 USD",
+        "precio": 5000,
         "img": "cross",
         "modelo": "2018",
         "desc": "Con algunos cambios únicamente a nivel de decoración, la Yamaha YZ125 2017 conserva intacta la base del año 2015, cuando introdujo algunos cambios en las suspensiones. Con su ultraligero chasis de aluminio y el rabioso motos dos tiempos 125 cc la Yamaha YZ 125 sigue siendo en 2017 una de las opciones más valoradas de su categoría.",

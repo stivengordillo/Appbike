@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { JsonPipe } from '@angular/common';
 import { Router, ActivatedRoute } from '@angular/router';
 import {BikesConsultingService} from '../services/bikes-consulting.service';
+import { sortPipe } from '../pipes/app.sort.pipe';
+
 
 @Component({
 	selector: 'bikesAppContent',
@@ -19,12 +21,12 @@ export  class ContentHomeComponent{
 		private route:ActivatedRoute
 	){
 		this.bikesConsultingService.getBikes().subscribe(data =>{
+			
 			this.dataBikes = data;	
 		} );
 	}
 	//direccionando al id correspondiente
 	goToBikeInfo(id){
-		console.log(id);
 		this.router.navigate(["/bike/"+id]);
 	}
 

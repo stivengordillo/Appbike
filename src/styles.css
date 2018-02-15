@@ -28,6 +28,36 @@ header h2{
 	margin: 0;
 	padding:0;
 }
+.filtrar{
+	align-items:center;
+	display:flex;
+	justify-content:center;
+	position:relative;
+	background: #ccc;
+	border-radius:10px;
+	padding:5px;
+}
+.filtrar h4{
+	font-weight:400;
+}
+.filtrar button{
+	background:rgb(133, 75, 92);
+	color:white;
+	margin: 0 2em;
+	cursor:pointer;
+	border-radius:10px;
+	border:none;
+	padding:5px 2em;
+	font-size:16px;
+	box-shadow:1px 1px 1px #000;
+}
+.filtrar div{
+	margin:0 2em;
+}
+.filtrar select{
+	padding:5px 2em;
+	border-radius:10px;
+}
 footer{
 	text-align: center;
 }

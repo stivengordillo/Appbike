@@ -8,8 +8,25 @@
 </section>
 <section class="content center">
     <article class="contentHome"  >
-            
-        <h2>Moto en venta</h2>
+        <div class="filtrar animated fadeIn">
+            <h4>Filtrar por:</h4>
+            <button>Precio</button>
+            <div>
+                <span>Marca:</span>
+                <select>
+                    <option  *ngFor ="let bike of dataBikes" value="{{bike.ref}}">{{bike.ref}}</option>
+                </select>
+            </div>
+            <div>
+                <span>Estado:</span>
+                <select>
+                    <option value="nueva">Nueva</option>
+                    <option value="usada">Usada</option>
+
+                </select>
+            </div>
+        </div>
+        <h2>Motos en venta</h2>
         <ul class="animated fadeInLeft">
             <li *ngFor ="let bike of dataBikes">
                 <a (click)="goToBikeInfo(bike.id)">
@@ -19,7 +36,7 @@
                         </figure>
                         <div>
                             <h2>{{bike.marca}} - {{bike.modelo}}</h2>
-                            <span>{{bike.precio}}</span>
+                            <span>valor: <strong>{{bike.precio}}</strong> USD</span>
                         </div>
                         
                     </div>
