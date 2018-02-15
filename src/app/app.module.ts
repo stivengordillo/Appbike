@@ -1,14 +1,18 @@
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes, ActivatedRoute } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { HeaderComponent }  from './components/header.component';
 import { FooterComponent }  from './components/footer.component';
-import { BikesConsultingService } from './services/bikes-consulting.service';
 import { ContentHomeComponent } from './components/contentHome.component';
 import { ContentInternalComponent } from './components/contentInternal.component';
+
+import { BikesConsultingService } from './services/bikes-consulting.service';
+import { BrandsConsultingService } from './services/brands.service';
 
 const appRoutes: Routes = [
   { 
@@ -31,9 +35,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule 
+    HttpClientModule , 
+    FormsModule
   ],
-  providers: [BikesConsultingService],
+  providers: [BikesConsultingService, BrandsConsultingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

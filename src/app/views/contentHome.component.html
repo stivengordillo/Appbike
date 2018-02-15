@@ -13,8 +13,9 @@
             <button>Precio</button>
             <div>
                 <span>Marca:</span>
-                <select>
-                    <option  *ngFor ="let bike of dataBikes" value="{{bike.ref}}">{{bike.ref}}</option>
+                <select name="brands" [(ngModel)]="selectBrand" (ngModelChange)="changeSelectedBrand($event)" >
+                    <option value="todas" >Todas las motos</option>
+                    <option  *ngFor ="let brand of dataBrands" value="{{brand.nombre}}">{{brand.nombre}}</option>
                 </select>
             </div>
             <div>
@@ -22,7 +23,6 @@
                 <select>
                     <option value="nueva">Nueva</option>
                     <option value="usada">Usada</option>
-
                 </select>
             </div>
         </div>
