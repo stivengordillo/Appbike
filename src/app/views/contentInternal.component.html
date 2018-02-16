@@ -15,9 +15,25 @@
         <div class="ci-right">
             <h3>Especificaciones:</h3>
             <ul>
-                <li><strong>Estado:</strong>{{bike.estado}}</li>
-                <li><strong>Cambios:</strong>{{bike.cambios}}</li>
-                <li><strong>Precio:</strong>{{bike.precio}}</li>
+                <li><strong>Estado: </strong>{{bike.estado}}</li>
+                <li><strong>Cambios: </strong>{{bike.cambios}}</li>
+                <li><strong>Precio: </strong>{{bike.precio}}</li>
+                <li>
+                    <strong>Motor: </strong>
+                    <ul>
+                        <li><strong>Arranque:</strong> 
+                            {{bike.motor.arranque}}
+                        </li>
+                        <li>
+                            <strong>Motor:</strong> 
+                            {{bike.motor.motor}}
+                        </li>
+                        <li>
+                            <strong>Combustible:</strong> 
+                            {{bike.motor.tipo}}
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <p>{{bike.desc}}</p>
